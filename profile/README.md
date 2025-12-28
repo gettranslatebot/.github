@@ -2,6 +2,8 @@
 
 AI-powered localization for your applications. Automate your translations using LLMs like GPT-4, Claude, and Gemini.
 
+**[translatebot.dev](https://translatebot.dev)**
+
 ## What is TranslateBot?
 
 TranslateBot is an open-source tool that automates translations using AI language models. It integrates into your existing internationalization workflow, eliminating tedious manual translation work.
