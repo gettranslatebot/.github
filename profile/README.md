@@ -1,32 +1,61 @@
 # TranslateBot
 
-AI-powered localization for your applications. Automate translations using LLMs like GPT-4, Claude, and Gemini.
+**Automate i18n translations without breaking your locale files.**
 
-## What is TranslateBot?
+TranslateBot is open-source tooling for developers who want to keep gettext and other i18n files up to date using LLMs — safely, cheaply, and inside existing workflows.
 
-TranslateBot is an open-source CLI tool that automates translations using AI language models. It plugs into your existing i18n workflow, eliminating the manual work of keeping locale files in sync.
+---
 
-Get started at [translatebot.dev](https://translatebot.dev).
+## Why TranslateBot?
 
-## Features
+If you’ve ever:
+- Manually translated `.po` files
+- Broken `{placeholders}` or HTML tags
+- Paid too much for small string updates
 
-- **Multi-Provider Support** — Works with OpenAI, Anthropic Claude, Google Gemini, Azure OpenAI, and more via LiteLLM
-- **Placeholder Preservation** — Safely handles `{variables}`, HTML tags, and format strings
-- **Dry-Run Mode** — Preview changes before writing to files
-- **Selective Overwriting** — Only translate new or changed strings
-- **Low Cost** — ~$0.01 per language for typical small apps using GPT-4o-mini
+TranslateBot is built for that exact problem.
 
-## Supported Frameworks
+---
+
+## What it does
+
+- **Preserves formatting** — placeholders, HTML, and format strings stay intact
+- **Fits existing workflows** — works with your current i18n setup
+- **Only translates what changed** — no unnecessary overwrites
+- **Dry runs supported** — see changes before writing files
+- **Provider-agnostic** — OpenAI, Claude, Gemini, Azure via LiteLLM
+- **Low cost by default** — ~$0.01 per language for small apps (GPT-4o-mini)
+
+---
+
+## Try it with Django
+
+```bash
+pip install translatebot-django
+python manage.py translate --target-lang nl
+```
+
+No new file formats. No vendor lock-in.
+
+---
+
+## Supported frameworks
 
 | Framework | Package | Status |
-|-----------|---------|--------|
+|---------|--------|--------|
 | Django | [translatebot-django](https://github.com/gettranslatebot/translatebot-django) | Available |
+| More | — | Planned |
+
+---
 
 ## Resources
 
-- [Documentation](https://translatebot.dev)
-- [PyPI Package](https://pypi.org/project/translatebot-django/)
+- 📘 Documentation: https://translatebot.dev
+- 📦 PyPI: https://pypi.org/project/translatebot-django/
+- 🐛 Issues & feedback welcome
+
+---
 
 ## License
 
-TranslateBot is released under the [Mozilla Public License 2.0](https://www.mozilla.org/en-US/MPL/2.0/).
+Released under the **Mozilla Public License 2.0** — open source, business-friendly.
