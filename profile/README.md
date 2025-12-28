@@ -1,29 +1,30 @@
 # TranslateBot
 
-AI-powered localization for your applications. Automate your translations using LLMs like GPT-4, Claude, and Gemini.
-
-**[translatebot.dev](https://translatebot.dev)**
+AI-powered localization for your applications. Automate translations using LLMs like GPT-4, Claude, and Gemini.
 
 ## What is TranslateBot?
 
-TranslateBot is an open-source tool that automates translations using AI language models. It integrates into your existing internationalization workflow, eliminating tedious manual translation work.
+TranslateBot is an open-source CLI tool that automates translations using AI language models. It plugs into your existing i18n workflow, eliminating the manual work of keeping locale files in sync.
 
-## Key Features
+Get started at [translatebot.dev](https://translatebot.dev).
+
+## Features
 
 - **Multi-Provider Support** — Works with OpenAI, Anthropic Claude, Google Gemini, Azure OpenAI, and more via LiteLLM
-- **Smart Placeholder Preservation** — Safely handles placeholders, HTML tags, and format strings
-- **Developer-Friendly CLI** — Simple commands with dry-run mode and selective overwriting
-- **Cost-Effective** — Roughly $0.01 per language for typical small apps using GPT-4o-mini
+- **Placeholder Preservation** — Safely handles `{variables}`, HTML tags, and format strings
+- **Dry-Run Mode** — Preview changes before writing to files
+- **Selective Overwriting** — Only translate new or changed strings
+- **Low Cost** — ~$0.01 per language for typical small apps using GPT-4o-mini
 
 ## Supported Frameworks
 
-| Framework | Repository | Status |
-|-----------|------------|--------|
+| Framework | Package | Status |
+|-----------|---------|--------|
 | Django | [translatebot-django](https://github.com/gettranslatebot/translatebot-django) | Available |
 
-## Links
+## Resources
 
-- [Website](https://translatebot.dev)
+- [Documentation](https://translatebot.dev)
 - [PyPI Package](https://pypi.org/project/translatebot-django/)
 
 ## License
