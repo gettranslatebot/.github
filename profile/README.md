@@ -1,6 +1,6 @@
 # TranslateBot
 
-**Automate Django translations with AI.** Repeatable, consistent, and pennies per language.
+**Translate Django .po files and model fields with AI.** Repeatable, consistent, and pennies per language.
 
 TranslateBot is a dedicated tool that sits between "do it by hand" and "pay for a platform" - built for ongoing projects where translations need to stay in sync as your code changes.
 
